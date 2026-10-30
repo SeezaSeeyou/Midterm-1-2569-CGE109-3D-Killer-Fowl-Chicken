@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7100000000000010000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7100000000000010001}
+  - component: {fileID: 7100000000000010002}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7100000000000010001
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7100000000000010000}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7100000000000010002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7100000000000010000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 942f3d54c9a34c3a8a9d8d1ca346254f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SoundManager
+  soundEffects:
+  - id: ChickenHit
+    clips:
+    - {fileID: 8300000, guid: 0bd7c3a7ef87196469401271c79cec86, type: 3}
+    - {fileID: 8300000, guid: eddd406e0463cb74f9dea4a3567cccdd, type: 3}
+    - {fileID: 8300000, guid: c5b38be1e7ad9e941930bb8c5fa69f2a, type: 3}
+    - {fileID: 8300000, guid: 09a268b2651a62a4eb5f6cbabe9976b4, type: 3}
+    volume: 1
+  - id: BigKidHit
+    allowOverlap: 1
+    clips:
+    - {fileID: 8300000, guid: 920b9dc478d82d045bda4320b8ea2d24, type: 3}
+    - {fileID: 8300000, guid: c8aae45d50b969847b49ba6e9a2934f0, type: 3}
+    - {fileID: 8300000, guid: 45bf233c81364d24f9ef397605406f89, type: 3}
+    volume: 1
+  - id: BigKidDeath
+    clips:
+    - {fileID: 8300000, guid: f44228539fd3a41469910028633799d6, type: 3}
+    - {fileID: 8300000, guid: fee180303f913d447859ea9bc07f0c6e, type: 3}
+    volume: 1
+  - id: KidHit
+    clips:
+    - {fileID: 8300000, guid: 596922668b03a634d9c0f62cf8d73118, type: 3}
+    - {fileID: 8300000, guid: a9d168f571d309d4ab3ee6266592d9b3, type: 3}
+    - {fileID: 8300000, guid: 3677f0e40468c5f409c4832999213119, type: 3}
+    - {fileID: 8300000, guid: 79ac0c25756a097409a0c4772960cc0f, type: 3}
+    volume: 1
+  - id: KidHitMelee
+    allowOverlap: 1
+    clips:
+    - {fileID: 8300000, guid: 06d356d985465254d90930c8ce96a5ad, type: 3}
+    volume: 1
+  - id: KidDeath
+    clips:
+    - {fileID: 8300000, guid: e0b8efc6e99b16e4592de1f7c4300971, type: 3}
+    volume: 1
+  - id: KidFind
+    clips:
+    - {fileID: 8300000, guid: 4c98d3ffe52336a4d8d0a55d39eadaea, type: 3}
+    - {fileID: 8300000, guid: 62ee4f16e22d61f4697c0a089bf95713, type: 3}
+    - {fileID: 8300000, guid: 34b25fadc6982c34ea4751aa17cb2777, type: 3}
+    volume: 1
+  - id: KidDodge
+    clips:
+    - {fileID: 8300000, guid: 2f093d0b5037f2b458b84e37faaa5f62, type: 3}
+    volume: 1
+  - id: EggBulletHit
+    allowOverlap: 1
+    clips:
+    - {fileID: 8300000, guid: 96ab0a9b0e4804545bcb98125cc5f3ac, type: 3}
+    volume: 1
+  - id: M1
+    allowOverlap: 1
+    clips:
+    - {fileID: 8300000, guid: 84fe1e2f24fd79b4097a2e63fdab962f, type: 3}
+    volume: 1
+  - id: M1charge
+    allowOverlap: 1
+    clips:
+    - {fileID: 8300000, guid: 894a36dd9bb0b2b4ca383b6addf97c1f, type: 3}
+    volume: 1
+  minDistance: 2
+  maxDistance: 20
+  masterVolume: 1
+  sfxVolume: 1
+  musicVolume: 0.5
+  sfxSource: {fileID: 0}
+  musicSource: {fileID: 0}
